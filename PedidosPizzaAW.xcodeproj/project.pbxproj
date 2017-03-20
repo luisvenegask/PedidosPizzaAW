@@ -19,6 +19,15 @@
 		D42C64AC1E7B7E69002BAA2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C64AB1E7B7E69002BAA2C /* InterfaceController.swift */; };
 		D42C64AE1E7B7E69002BAA2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C64AD1E7B7E69002BAA2C /* ExtensionDelegate.swift */; };
 		D42C64B01E7B7E69002BAA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42C64AF1E7B7E69002BAA2C /* Assets.xcassets */; };
+		D42C64C01E7B80D3002BAA2C /* objetoConfirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C64BF1E7B80D3002BAA2C /* objetoConfirmacion.swift */; };
+		D42C64C21E7B80F9002BAA2C /* ControllerSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C64C11E7B80F9002BAA2C /* ControllerSize.swift */; };
+		D42C64C41E7B8120002BAA2C /* ControllerMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C64C31E7B8120002BAA2C /* ControllerMasa.swift */; };
+		D42C64C61E7B813C002BAA2C /* ControllerConfirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C64C51E7B813C002BAA2C /* ControllerConfirmacion.swift */; };
+		D4C59B001E7F77F6003128C5 /* objetoConfirmacionCuatro.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C59AFF1E7F77F6003128C5 /* objetoConfirmacionCuatro.swift */; };
+		D4EB8E9E1E7DA33900B3EB46 /* objetoConfirmacionDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB8E9D1E7DA33900B3EB46 /* objetoConfirmacionDos.swift */; };
+		D4EB8EA01E7DAADE00B3EB46 /* objetoConfirmacionTres.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB8E9F1E7DAADE00B3EB46 /* objetoConfirmacionTres.swift */; };
+		D4EB8EA21E7DABA300B3EB46 /* ControllerQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB8EA11E7DABA300B3EB46 /* ControllerQueso.swift */; };
+		D4EB8EA41E7DF84800B3EB46 /* ControllerIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB8EA31E7DF84800B3EB46 /* ControllerIngredientes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +89,15 @@
 		D42C64AD1E7B7E69002BAA2C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D42C64AF1E7B7E69002BAA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D42C64B11E7B7E69002BAA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42C64BF1E7B80D3002BAA2C /* objetoConfirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = objetoConfirmacion.swift; sourceTree = "<group>"; };
+		D42C64C11E7B80F9002BAA2C /* ControllerSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerSize.swift; sourceTree = "<group>"; };
+		D42C64C31E7B8120002BAA2C /* ControllerMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerMasa.swift; sourceTree = "<group>"; };
+		D42C64C51E7B813C002BAA2C /* ControllerConfirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerConfirmacion.swift; sourceTree = "<group>"; };
+		D4C59AFF1E7F77F6003128C5 /* objetoConfirmacionCuatro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = objetoConfirmacionCuatro.swift; sourceTree = "<group>"; };
+		D4EB8E9D1E7DA33900B3EB46 /* objetoConfirmacionDos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = objetoConfirmacionDos.swift; sourceTree = "<group>"; };
+		D4EB8E9F1E7DAADE00B3EB46 /* objetoConfirmacionTres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = objetoConfirmacionTres.swift; sourceTree = "<group>"; };
+		D4EB8EA11E7DABA300B3EB46 /* ControllerQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerQueso.swift; sourceTree = "<group>"; };
+		D4EB8EA31E7DF84800B3EB46 /* ControllerIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerIngredientes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +168,15 @@
 				D42C64AD1E7B7E69002BAA2C /* ExtensionDelegate.swift */,
 				D42C64AF1E7B7E69002BAA2C /* Assets.xcassets */,
 				D42C64B11E7B7E69002BAA2C /* Info.plist */,
+				D42C64BF1E7B80D3002BAA2C /* objetoConfirmacion.swift */,
+				D42C64C11E7B80F9002BAA2C /* ControllerSize.swift */,
+				D42C64C31E7B8120002BAA2C /* ControllerMasa.swift */,
+				D42C64C51E7B813C002BAA2C /* ControllerConfirmacion.swift */,
+				D4EB8E9D1E7DA33900B3EB46 /* objetoConfirmacionDos.swift */,
+				D4EB8E9F1E7DAADE00B3EB46 /* objetoConfirmacionTres.swift */,
+				D4EB8EA11E7DABA300B3EB46 /* ControllerQueso.swift */,
+				D4EB8EA31E7DF84800B3EB46 /* ControllerIngredientes.swift */,
+				D4C59AFF1E7F77F6003128C5 /* objetoConfirmacionCuatro.swift */,
 			);
 			path = "PedidosPizzaAW WatchKit Extension";
 			sourceTree = "<group>";
@@ -298,8 +325,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4EB8EA41E7DF84800B3EB46 /* ControllerIngredientes.swift in Sources */,
+				D4EB8EA01E7DAADE00B3EB46 /* objetoConfirmacionTres.swift in Sources */,
 				D42C64AE1E7B7E69002BAA2C /* ExtensionDelegate.swift in Sources */,
+				D4EB8EA21E7DABA300B3EB46 /* ControllerQueso.swift in Sources */,
+				D4EB8E9E1E7DA33900B3EB46 /* objetoConfirmacionDos.swift in Sources */,
+				D42C64C41E7B8120002BAA2C /* ControllerMasa.swift in Sources */,
+				D42C64C01E7B80D3002BAA2C /* objetoConfirmacion.swift in Sources */,
+				D4C59B001E7F77F6003128C5 /* objetoConfirmacionCuatro.swift in Sources */,
+				D42C64C21E7B80F9002BAA2C /* ControllerSize.swift in Sources */,
 				D42C64AC1E7B7E69002BAA2C /* InterfaceController.swift in Sources */,
+				D42C64C61E7B813C002BAA2C /* ControllerConfirmacion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +584,7 @@
 				D42C64B61E7B7E69002BAA2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D42C64B81E7B7E69002BAA2C /* Build configuration list for PBXNativeTarget "PedidosPizzaAW WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +593,7 @@
 				D42C64BA1E7B7E69002BAA2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D42C64BC1E7B7E69002BAA2C /* Build configuration list for PBXNativeTarget "PedidosPizzaAW" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +602,7 @@
 				D42C64BE1E7B7E69002BAA2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
