@@ -200,6 +200,7 @@
                         <label alignment="left" text="Label" id="Ehj-E3-rGu"/>
                     </items>
                     <connections>
+                        <outlet property="etiquetaIngredientes" destination="Ehj-E3-rGu" id="36B-n4-mKs"/>
                         <outlet property="etiquetaMasa" destination="l3z-W3-x7v" id="xxC-o3-r22"/>
                         <outlet property="etiquetaQueso" destination="MDS-SY-nbM" id="0Zb-W0-3B9"/>
                         <outlet property="etiquetaSize" destination="cft-b4-e8D" id="Khp-eS-aIM"/>

@@ -13,7 +13,7 @@ class objetoConfirmacionCuatro: NSObject {
     var ingredientes:[String]=[]
     
     init (i:String) {
-        ingredientes=i
+        ingredientes=[i]
     }
 
 }

@@ -15,6 +15,7 @@ class ControllerConfirmacion: WKInterfaceController {
     @IBOutlet var etiquetaSize: WKInterfaceLabel!
     @IBOutlet var etiquetaMasa: WKInterfaceLabel!
     @IBOutlet var etiquetaQueso: WKInterfaceLabel!
+    @IBOutlet var etiquetaIngredientes: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -31,7 +32,7 @@ class ControllerConfirmacion: WKInterfaceController {
         etiquetaQueso.setText(String(e.queso))
 
         let f = context as! objetoConfirmacionCuatro
-        etiquetaIngredientes.setText(String(f.ingredientes))
+        etiquetaIngredientes.setText(String(describing: f.ingredientes))
     }
 
     override func willActivate() {
