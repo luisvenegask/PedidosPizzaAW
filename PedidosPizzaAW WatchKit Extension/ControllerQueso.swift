@@ -12,31 +12,40 @@ import Foundation
 
 class ControllerQueso: WKInterfaceController {
 
+    var resultado = ""
+    var resultadoAnterior : objetoConfirmacion!
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        
+        resultadoAnterior = context as! objetoConfirmacion
+
     }
     @IBAction func quesoMozzarella() {
-        let seleccionMozzarella=objetoConfirmacionTres(q: "Mozzarella")
-        pushController(withName: "ingredientes", context: seleccionMozzarella)
+        self.resultado = "Mozzarella"
+        self.entregarResultado(resultado: self.resultado)
     }
 
     @IBAction func quesoCheddar() {
-        let seleccionCheddar=objetoConfirmacionTres(q: "Cheddar")
-        pushController(withName: "ingredientes", context: seleccionCheddar)
+        self.resultado = "Cheddar"
+        self.entregarResultado(resultado: self.resultado)
     }
     
     @IBAction func quesoParmesano() {
-        let seleccionParmesano=objetoConfirmacionTres(q: "Parmesano")
-        pushController(withName: "ingredientes", context: seleccionParmesano)
+        self.resultado = "Parmesano"
+        self.entregarResultado(resultado: self.resultado)
     }
     
     @IBAction func sinQueso() {
-        let seleccionSinQueso=objetoConfirmacionTres(q: "Sin Queso")
-        pushController(withName: "confirmacion", context: seleccionSinQueso)
+        self.resultado = "Sin Queso"
+        self.entregarResultado(resultado: self.resultado)
     }
     
+    func entregarResultado (resultado:String) {
+        pushController(withName: "ingredientes", context: objetoConfirmacion(s: self.resultadoAnterior.size, m: self.resultadoAnterior.masa , q: "\(resultado)", listaIng:[]))
+    }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user

@@ -12,8 +12,8 @@ import Foundation
 
 class ControllerIngredientes: WKInterfaceController {
 
-    var resultado:[String]?
-    var ingredientes:[String] = []
+    var resultadoAnterior : objetoConfirmacion!
+    var listaDeIngredientes:[String] = []
     
     @IBOutlet var finalizarPedido: WKInterfaceButton!
     
@@ -21,14 +21,16 @@ class ControllerIngredientes: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        
+        resultadoAnterior = context as! objetoConfirmacion
     
-        resultado = context as? [String]
+        /*resultado = context as? [String]
         if let contenidoAnterior = resultado {
             print("seleccion: ")
             for index in contenidoAnterior {
             print(index)
             }
-        }
+        }*/
     }
 
     override func willActivate() {
@@ -42,82 +44,47 @@ class ControllerIngredientes: WKInterfaceController {
     }
 
     @IBAction func seleccionarJamon(_ value: Bool) {
-        if(value) {
+        listaDeIngredientes.append("Jamon")
+        
+        
+        
+        /*if(value) {
             ingredientes.append("Jamon")
             resultado!.append("Jamon")
         } else {
             ingredientes = ingredientes.filter(){ $0 != "Jamon"}
             resultado! = resultado!.filter(){ $0 != "Jamon"}
-        }
+        }*/
     }
     @IBAction func seleccionarPepperoni(_ value: Bool) {
-        if(value) {
-            ingredientes.append("Pepperoni")
-            resultado!.append("Pepperoni")
-        } else {
-            ingredientes = ingredientes.filter(){ $0 != "Pepperoni"}
-            resultado! = resultado!.filter(){ $0 != "Pepperoni"}
-        }
+        listaDeIngredientes.append("Pepperoni")
     }
     @IBAction func seleccionarCarne(_ value: Bool) {
-        if(value) {
-            ingredientes.append("Carne")
-            resultado!.append("Carne")
-        } else {
-            ingredientes = ingredientes.filter(){ $0 != "Carne"}
-            resultado! = resultado!.filter(){ $0 != "Carne"}
-        }
+        listaDeIngredientes.append("Carne")
     }
     @IBAction func seleccionarTomate(_ value: Bool) {
-        if(value) {
-            ingredientes.append("Tomate")
-            resultado!.append("Tomate")
-        } else {
-            ingredientes = ingredientes.filter(){ $0 != "Tomate"}
-            resultado! = resultado!.filter(){ $0 != "Tomate"}
-        }
+        listaDeIngredientes.append("Tomate")
     }
     @IBAction func seleccionarAceitunas(_ value: Bool) {
-        if(value) {
-            ingredientes.append("Aceitunas")
-            resultado!.append("Aceitunas")
-        } else {
-            ingredientes = ingredientes.filter(){ $0 != "Aceitunas"}
-            resultado! = resultado!.filter(){ $0 != "Aceitunas"}
-        }
+        listaDeIngredientes.append("Aceitunas")
     }
     @IBAction func seleccionarRucula(_ value: Bool) {
-        if(value) {
-            ingredientes.append("Rucula")
-            resultado!.append("Rucula")
-        } else {
-            ingredientes = ingredientes.filter(){ $0 != "Rucula"}
-            resultado! = resultado!.filter(){ $0 != "Rucula"}
-        }
+        listaDeIngredientes.append("Rucula")
     }
     @IBAction func seleccionarCebolla(_ value: Bool) {
-        if(value) {
-            ingredientes.append("Cebolla")
-            resultado!.append("Cebolla")
-        } else {
-            ingredientes = ingredientes.filter(){ $0 != "Cebolla"}
-            resultado! = resultado!.filter(){ $0 != "Cebolla"}
-        }
+        listaDeIngredientes.append("Cebolla")
     }
     @IBAction func seleccionarPimiento(_ value: Bool) {
-        if(value) {
-            ingredientes.append("Pimiento")
-            resultado!.append("Pimiento")
-        } else {
-            ingredientes = ingredientes.filter(){ $0 != "Pimiento"}
-            resultado! = resultado!.filter(){ $0 != "Pimiento"}
-        }
+        listaDeIngredientes.append("Pimiento")
     }
     @IBAction func accionFinalizarPedido() {
-        pushController(withName: "confirmacion", context: resultado)
+        
+        pushController(withName: "confirmacion", context: objetoConfirmacion(s: self.resultadoAnterior.size, m: self.resultadoAnterior.masa , q: self.resultadoAnterior.queso , listaIng:["\(listaDeIngredientes)"]))
+        
+        /*pushController(withName: "confirmacion", context: resultado)
         
         let seleccionIngredientes=objetoConfirmacionCuatro(i: "\(resultado)")
         pushController(withName: "confirmacion", context: seleccionIngredientes)
-
+*/
     }
 }

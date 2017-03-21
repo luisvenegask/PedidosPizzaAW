@@ -11,26 +11,35 @@ import Foundation
 
 
 class ControllerMasa: WKInterfaceController {
-   
+    
+    var resultado = ""
+    var resultadoAnterior : objetoConfirmacion!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        
+        resultadoAnterior = context as! objetoConfirmacion
     }
 
     @IBAction func masaDelgada() {
-        let seleccionDelgada=objetoConfirmacionDos(m: "Delgada")
-        pushController(withName: "queso", context: seleccionDelgada)
+        self.resultado = "Delgada"
+        self.entregarResultado(resultado: self.resultado)
     }
     
     @IBAction func masaCrujiente() {
-        let seleccionCrujiente=objetoConfirmacionDos(m: "Crujiente")
-        pushController(withName: "queso", context: seleccionCrujiente)
+        self.resultado = "Crujiente"
+        self.entregarResultado(resultado: self.resultado)
     }
 
     @IBAction func masaGruesa() {
-        let seleccionGruesa=objetoConfirmacionDos(m: "Gruesa")
-        pushController(withName: "queso", context: seleccionGruesa)
+        self.resultado = "Gruesa"
+        self.entregarResultado(resultado: self.resultado)
+    }
+    
+    func entregarResultado (resultado:String) {
+        pushController(withName: "queso", context: objetoConfirmacion(s: self.resultadoAnterior.size, m: "\(resultado)" , q:"", listaIng:[]))
     }
     
     override func willActivate() {

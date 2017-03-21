@@ -11,8 +11,12 @@ import Foundation
 
 
 class ControllerSize: WKInterfaceController {
-
-    let resultado:[String] = []
+    
+    @IBOutlet var botonChica: WKInterfaceButton!
+    @IBOutlet var botonMediana: WKInterfaceButton!
+    @IBOutlet var botonGrande: WKInterfaceButton!
+    
+    var resultado = ""
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -21,18 +25,22 @@ class ControllerSize: WKInterfaceController {
     }
 
     @IBAction func sizeChica() {
-        let seleccionChica = objetoConfirmacion(s: "Chica")
-        pushController(withName: "masa", context: seleccionChica)
+        self.resultado = "Chica"
+        self.entregarResultado(resultado: self.resultado)
     }
     
     @IBAction func sizeMediana() {
-        let seleccionMediana = objetoConfirmacion(s: "Mediana")
-        pushController(withName: "masa", context: seleccionMediana)
+        self.resultado = "Mediana"
+        self.entregarResultado(resultado: self.resultado)
     }
     
     @IBAction func sizeGrande() {
-        let seleccionGrande = objetoConfirmacion(s: "Grande")
-        pushController(withName: "masa", context: seleccionGrande)
+        self.resultado = "Grande"
+        self.entregarResultado(resultado: self.resultado)
+    }
+    
+    func entregarResultado (resultado:String) {
+        pushController(withName: "masa", context: objetoConfirmacion(s: "\(resultado)", m:"", q:"", listaIng:[]))
     }
     
     override func willActivate() {

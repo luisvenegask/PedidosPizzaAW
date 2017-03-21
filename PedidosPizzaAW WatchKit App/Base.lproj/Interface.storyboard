@@ -47,6 +47,11 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="botonChica" destination="CI0-WW-vT0" id="xhn-o5-ocA"/>
+                        <outlet property="botonGrande" destination="9LF-bm-rcl" id="nm5-9T-fkE"/>
+                        <outlet property="botonMediana" destination="03A-GC-JVX" id="7Bb-rO-EFN"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="383" y="150"/>
@@ -197,7 +202,12 @@
                             </items>
                         </group>
                         <label alignment="left" text="Ingredientes: " id="Rdu-mB-soP"/>
-                        <label alignment="left" text="Label" id="Ehj-E3-rGu"/>
+                        <label alignment="left" text="Label" numberOfLines="3" id="Ehj-E3-rGu"/>
+                        <button width="1" alignment="left" title="VOLVER" id="3dU-dU-KIb">
+                            <connections>
+                                <segue destination="xbw-Mw-ccT" kind="push" id="GZt-sq-Uq8"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="etiquetaIngredientes" destination="Ehj-E3-rGu" id="36B-n4-mKs"/>
@@ -221,4 +231,7 @@
             <point key="canvasLocation" x="1728" y="150"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GZt-sq-Uq8"/>
+    </inferredMetricsTieBreakers>
 </document>

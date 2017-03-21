@@ -22,17 +22,19 @@ class ControllerConfirmacion: WKInterfaceController {
         
         // Configure interface objects here.
         
-        let c = context as! objetoConfirmacion
-        etiquetaSize.setText(String(c.size))
+        let resultadoAnterior = context as! objetoConfirmacion
+        self.etiquetaSize.setText(resultadoAnterior.size)
+        self.etiquetaMasa.setText(resultadoAnterior.masa)
+        self.etiquetaQueso.setText(resultadoAnterior.queso)
         
-        let d = context as! objetoConfirmacionDos
-        etiquetaMasa.setText(String(d.masa))
-        
-        let e = context as! objetoConfirmacionTres
-        etiquetaQueso.setText(String(e.queso))
+        var entregarIngredientes = ""
 
-        let f = context as! objetoConfirmacionCuatro
-        etiquetaIngredientes.setText(String(describing: f.ingredientes))
+        for i in resultadoAnterior.ingredientes {
+        entregarIngredientes = "-\(entregarIngredientes) \n-\(i)"
+        }
+        
+        self.etiquetaIngredientes.setText(entregarIngredientes)
+
     }
 
     override func willActivate() {

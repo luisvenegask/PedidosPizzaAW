@@ -11,8 +11,17 @@ import WatchKit
 class objetoConfirmacion: NSObject {
 
     var size:String=""
+    var masa:String=""
+    var queso:String=""
+    var ingredientes:[String]=[]
     
-    init (s:String) {
+    override init() {
+    }
+    
+    init (s:String, m:String, q:String, listaIng:[String]) {
         size=s
+        masa=m
+        queso=q
+        ingredientes=listaIng
     }
 }
